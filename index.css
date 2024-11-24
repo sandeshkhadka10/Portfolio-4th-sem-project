@@ -122,3 +122,18 @@ nav{
     font-size: 28px;
     cursor: pointer;
 }
+/* making nav-button responsive */
+@media only screen and (max-width : 900px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        /* left: -100%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,0.7);
+    }
+}
