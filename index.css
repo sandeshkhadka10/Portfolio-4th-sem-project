@@ -29,8 +29,8 @@ html{
 
 /* Change the Scroll-Bar Design */
 ::-webkit-scrollbar{
-    width: 20px;
-    border-radius: 25px;
+    width: 10px;
+    border-radius: 20px;
 }
 ::-webkit-scrollbar-track{
     background: #f1f1f1;
@@ -152,4 +152,9 @@ nav{
         justify-content: center;
         align-items: center;
     }
+}
+
+/* Main i.e Wrapper Container */
+.wrapper{
+    height: 150vh;
 }
