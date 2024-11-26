@@ -156,5 +156,23 @@ nav{
 
 /* Main i.e Wrapper Container */
 .wrapper{
-    /* height: 150vh; */
+    padding-inline: 10vw;
+}
+/* featured-box */
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+/* feature-text */
+.featured-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
 }
