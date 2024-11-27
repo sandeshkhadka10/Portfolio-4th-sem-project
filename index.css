@@ -204,5 +204,11 @@ nav{
 }
 /* featured-text-btn*/
 .featured-text-btn{
-    
+    display: flex;
+    gap: 20px;
+}
+.featured-text-btn>.blue-btn{
+    background: var(--first-color);
+    color: var(--color-white);
+
 }
