@@ -152,6 +152,11 @@ nav{
         justify-content: center;
         align-items: center;
     }
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
 }
 
 /* Main i.e Wrapper Container */
@@ -256,4 +261,36 @@ nav{
         transform: translateY(10px);
         border-radius: 45% 55% 45% 55%;
     } 
+}
+/* scroll-btn */
+.scroll-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+.scroll-btn i{
+    font-size: 20px;
+}
+/* media-query for making the featured-text responsive  */
+@media only screen and (max-width : 1024px){
+    .featured-text{
+        padding: 0;
+    }
+    .featured-image, .image img{
+        width: 320px;
+        height: 320px;
+    }
+
 }
