@@ -313,5 +313,22 @@ nav{
         width: 320px;
         height: 320px;
     }
-
+}
+/* About Section */
+.section{
+    padding-block: 5em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.col{
+    display: flex;
+    width: 50%;
+}
+.top-header{
+    text-align: center;
+    margin-bottom: 5em;
 }
