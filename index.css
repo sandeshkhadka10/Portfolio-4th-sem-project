@@ -228,7 +228,7 @@ nav{
 }
 /* featured-name*/
 .featured-name{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
@@ -386,7 +386,7 @@ h3{
 }
 .about-btn button{
     position: absolute;
-    right: 50px;
+    right: 37%;
     bottom: 20px;
     background-color: var(--first-color);
     color: var(--color-white);
