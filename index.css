@@ -192,6 +192,12 @@ nav{
         width: 150px;
         height: 150px;
     } */
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 /* ..................................................... */
 
@@ -440,4 +446,23 @@ h3{
 .project-box label{
     font-size: 15px;
     color: #777;
+}
+.project-box::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+.project-box:hover.project-box::after{
+    bottom: 0;
+}
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
+    color: var(--color-white);
+    z-index: 2;
 }
