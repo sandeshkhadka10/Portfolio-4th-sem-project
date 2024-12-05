@@ -136,69 +136,7 @@ nav{
 /* ..................................................... */
 
 
-/* making nav-button responsive */
-@media only screen and (max-width : 900px){
-    .nav-button{
-        display: none;
-    }
-    .nav-menu{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255,255,255,0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: 3s;
-    }
-    .nav-menu.responsive{
-        left: 0;
-    }
-    .nav_menu_list{
-        flex-direction: column;
-    }
-    .nav-menu-bar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .featured-box{
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-    .featured-text{
-        width: 100%;
-        order: 2;
-        justify-content: center;
-        align-content: flex-start;
-        min-height: 60vh;
-    }
-    .social_icons{
-        margin-top: 2em;
-    }
-    .featured-image{
-        order: 1;
-        justify-content: center;
-        min-height: 150px;
-        width: 100%;
-        margin-top: 65px;
-    }
-    /* .featured-image, .image img{
-        width: 150px;
-        height: 150px;
-    } */
-    .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
-    }
-}
+
 /* ..................................................... */
 
 
@@ -298,6 +236,8 @@ nav{
 }
 .image img{
     width: 380px;
+    height: 380px;
+    object-fit: cover;
 }
 @keyframes imgFloat {
     50%{
@@ -325,18 +265,6 @@ nav{
 }
 .scroll-btn i{
     font-size: 20px;
-}
-/* ..................................................... */
-
-/* media-query for making the featured-text responsive  */
-@media only screen and (max-width : 1024px){
-    .featured-text{
-        padding: 0;
-    }
-    .featured-image, .image img{
-        width: 320px;
-        height: 320px;
-    }
 }
 /* ..................................................... */
 
@@ -465,4 +393,83 @@ h3{
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
+}
+
+/* ..................................................... */
+
+/* making responsive for every element */
+@media only screen and (max-width : 900px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: 3s;
+    }
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav_menu_list{
+        flex-direction: column;
+    }
+    .nav-menu-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .featured-text{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+    .social_icons{
+        margin-top: 2em;
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+    .image, .image img{
+        width: 100px;
+        height: 100px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+/* ..................................................... */
+
+/* media-query for making the featured-text responsive  */
+@media only screen and (max-width : 1024px){
+    .featured-text{
+        padding: 0;
+    }
+    .image, .image img{
+        width: 250px;
+        height: 250px;
+    }
 }
