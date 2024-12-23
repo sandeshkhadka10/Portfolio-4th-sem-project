@@ -469,6 +469,16 @@ textarea{
     outline: none;
     resize: none;
 }
+.form-button>.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    color: var(--color-white);
+}
+.form-button>.btn:hover{
+    background: #00B5E7;
+}
 
 
 
