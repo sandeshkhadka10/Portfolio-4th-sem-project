@@ -479,7 +479,10 @@ textarea{
 .form-button>.btn:hover{
     background: #00B5E7;
 }
-
+.form-button>.btn>i{
+    font-size: 18px;
+    rotate: -45deg;
+}
 
 
 /* making responsive for every element */
@@ -549,7 +552,7 @@ textarea{
         justify-content: center;
         width: 100%;
     }
-    .about-info{
+    .about-info, .contact-info{
         width: 100%;
     }
     .project-container{
@@ -583,4 +586,11 @@ textarea{
     .project-box{
         width: 100%;
     }
+    .form-input{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+    
 }
