@@ -484,7 +484,11 @@ textarea{
     rotate: -45deg;
 }
 
+/* ..................................................... */
+/* Footer-bottom */
 
+
+/* ..................................................... */
 /* making responsive for every element */
 @media only screen and (max-width : 900px){
     .nav-button{
