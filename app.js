@@ -32,7 +32,7 @@ var typingEffect = new Typed(".typedText",{
     backDelay : 2000
 })
 
-// Scroll Reveal Animation
+// Scroll Reveal Animation for Home, Project Box and Heading
 const sr = ScrollReveal({
     origin : 'top',
     distance : '80px',
@@ -50,3 +50,20 @@ sr.reveal('.featured-image',{delay: 300})
 
 // Project Box
 sr.reveal('.project-box',{interval: 200})
+
+// Headings
+sr.reveal('.top-header',{})
+
+// Scroll Reveal Animation for Introduction
+const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+// Introduction
+srLeft.reveal('.about-info',{delay: 100})
+
+// Contact-Info
+srLeft.reveal('.contact-info',{delay: 100})
