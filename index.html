@@ -22,58 +22,59 @@
 
 </head>
 <body>
-    <!-- Header -->
     <div class="container">
-        <nav id="header">
+        <!-- --------------- HEADER --------------- -->
+          <nav id="header">
             <div class="nav-logo">
-                <p class ="nav-name">Sandesh</p>
+                <p class="nav-name">Sandesh</p>
                 <span>.</span>
             </div>
-        <div class="nav-menu" id="myNavMenu">
-            <div class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#Home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#About" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#Projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#Contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
             </div>
-        </div> 
-        <div class="nav-button">
-            <button class="btn">Download CV<i class="uil uil-file-download-alt"></i></i></button>
-        </div>
-        <div class="nav-menu-bar"><i class="uil uil-bars" onclick="myFunctionChange()"></i>
-        </div>
-        </nav>
-    </div>
-
-    <!-- Main -->
-     <main class="wrapper">
-        <!-- Feature-Box -->
-        <section class="featured-box" id="home">
-            <div class="featured-text">
+            <div class="nav-button">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+          </nav>
+          
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+           <!-- -------------- FEATURED BOX ---------------- -->
+           <section class="featured-box" id="home">
+              <div class="featured-text">
                 <div class="featured-text-card">
-                    <span>Sandesh khadka</span>
+                    <span>Sandesh Khadka</span>
                 </div>
                 <div class="featured-name">
                     <p>I'm <span class="typedText"></span></p>
                 </div>
                 <div class="featured-text-info">
-                    <p>Transforming 'Hello World' into 'Hello Universe' - because we aim for more.</p>
+                    <p>Transforming 'Hello World' into 'Hello Universe' - because we aim for more.
+                    </p>
                 </div>
                 <div class="featured-text-btn">
-                    <button class="btn blue-btn">Hire me</button>
-                    <button class="btn">Download CV<i class="uil uil-file-download-alt"></i></button>
+                    <button class="btn blue-btn">Hire Me</button>
+                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
                 </div>
                 <div class="social_icons">
                     <div class="icon"><i class="uil uil-instagram"></i></div>
@@ -81,37 +82,38 @@
                     <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
                     <div class="icon"><i class="uil uil-github-alt"></i></i></div>
                 </div>
-            </div>
-            <div class="featured-image">
+              </div>
+              <div class="featured-image">
                 <div class="image">
                     <img src="./assests/1628960503781.jpg" alt="profile pic">
                 </div>
-            </div>
-            <div class="scroll-icon-box">
-                <a href="#about"class="scroll-btn">
+              </div>
+              <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
                     <i class="uil uil-mouse-alt"></i>
                     <p>Scroll Down</p>
                 </a>
-            </div>
-        </section>
+              </div>
+           </section>
 
-        <!-- About -->
-         <section class="section" id="about">
-            <div class="top-header">
+           <!-- -------------- ABOUT BOX ---------------- -->
+           <section class="section" id="about">
+              <div class="top-header">
                 <h1>About Me</h1>
-            </div>
-            <div class="row">
+              </div>
+              <div class="row">
                 <div class="col">
                     <div class="about-info">
-                        <h3>My Introduction</h3>
-                        <p>I am a passionate Full-Stack Developer with strong basis in front-end technologies like HTML, CSS, Bootstrap, and JavaScript, and back-end development using Java, Spring Boot, and MySQL. I leverage tools like Postman to streamline API development and testing. My proficiency in C and C++ enhances my problem-solving capabilities, enabling me to build robust and scalable solutions.</p>
-                        <div class = "about-btn">
-                            <button class="btn">Download CV<i class="uil uil-import"></i></button>
+                        <h3>My introduction</h3>
+                        <p>I am a passionate Full-Stack Developer with strong basis in front-end technologies like HTML, CSS, Bootstrap, and JavaScript, and back-end development using Java, Spring Boot, and MySQL. I leverage tools like Postman to streamline API development and testing. My proficiency in C and C++ enhances my problem-solving capabilities, enabling me to build robust and scalable solutions.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn">Download CV <i class="uil uil-import"></i></button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Skills -->
+                <!-- -------------- Skills ---------------- -->
                 <div class="col">
                     <div class="skills-box">
                         <div class="skills-header">
@@ -156,10 +158,10 @@
                     </div>
                 </div>
             </div>
-         </section>
+           </section>
 
-         <!-- Projects -->
-          <section class="section" id="projects">
+           <!-- -------------- PROJECT BOX ---------------- -->
+           <section class="section" id="projects">
             <div class="top-header">
                 <h1>Projects</h1>
             </div>
@@ -177,72 +179,72 @@
             </div>
           </section>
 
-          <!-- Contacts -->
+           <!-- -------------- CONTACT BOX ---------------- -->
            <section class="section" id="contact">
-             <div class="top-header">
-                <h1>Get In Touch</h1>
+              <div class="top-header">
+                <h1>Get in touch</h1>
                 <span>Do you have a project in your mind, contact me here</span>
-             </div>
-             <div class="row">
-                <div class="col">
+              </div>
+              <div class="row">
+                 <div class="col">
                     <div class="contact-info">
                         <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                        <p><i class="uil uil-envelope"></i>Email: sandeshkhadka551@gmail.com</p>
-                        <p><i class="uil uil-phone"></i>Phone no: +977 9867335060</p>
+                        <p><i class="uil uil-envelope"></i> Email: sandeshkhadka551@gmail.com</p>
+                        <p><i class="uil uil-phone"></i> Phoneno: 9867335060</p>
                     </div>
-                </div>
-                <div class="col">
-                <div class="form-control">
-                    <div class="form-input">
-                        <input type="text" class="input-field" placeholder="Enter your name">
-                        <input type="text" class="input-field" placeholder="Enter your email">
+                 </div>
+                 <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
                     </div>
-                    <div class="text-area">
-                        <textarea placeholder="Enter your message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send<i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-                </div>
-            </div>
+                 </div>
+              </div>
            </section>
-           
-           <!-- Footer -->
-            <footer>
-                <div class="top-footer">
-                    <p>Sandesh Khadka .</p>
-                </div>
-                <div class="middle-footer">
-                    <ul class="footer-menu">
-                        <li class="footer-menu-list">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-list">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-list">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li class="footer-menu-list">
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-social-icons">
-                    <div class="icon"><i class="uil uil-instagram"></i></div>
-                    <div class="icon"><i class="uil uil-twitter-alt"></i></i></div>
-                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                    <div class="icon"><i class="uil uil-github-alt"></i></i></div>
-                </div>
-                <div class="bottom-footer">
-                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sandesh Khadka</a>-All rights are reserved</p>
-                </div>
-            </footer>
-        
-     </main>
+        </main>
 
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Sandesh Khadka .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-twitter-alt"></i></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sandesh Khadka</a> - All rights reserved</p>
+            </div>
+        </footer>
+        </div>
 
+    <!-- ----- TYPING JS Link ----- -->
     <!-- linked with Typed.js for typing effect -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
@@ -251,5 +253,6 @@
 
     <!-- linked with js -->
     <script src ="app.js"></script>
+
 </body>
 </html>
