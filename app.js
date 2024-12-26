@@ -54,7 +54,7 @@ sr.reveal('.project-box',{interval: 200})
 // Headings
 sr.reveal('.top-header',{})
 
-// Scroll Reveal Animation for Introduction
+// Scroll Reveal Animation for Introduction and Contact-Info
 const srLeft = ScrollReveal({
     origin: 'left',
     distance: '80px',
@@ -67,3 +67,18 @@ srLeft.reveal('.about-info',{delay: 100})
 
 // Contact-Info
 srLeft.reveal('.contact-info',{delay: 100})
+
+// Scroll Reveal Animation for Skills and Form Box
+const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+// Skills
+srRight.reveal('.skills-box',{delay: 100})
+
+// Form Box
+srRight.reveal('.form-control',{delay: 100})
+
