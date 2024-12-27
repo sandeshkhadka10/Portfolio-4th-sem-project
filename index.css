@@ -125,7 +125,8 @@ nav{
     display: none;
 }
 .nav-button a{
-    color: black;
+    color: var(--text-color-second);
+    font-weight: 500;
     font-size: 15px;
 }
 .btn{
