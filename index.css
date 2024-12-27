@@ -124,6 +124,13 @@ nav{
 .nav-menu-btn{
     display: none;
 }
+.nav-button a{
+    color: black;
+    font-size: 15px;
+}
+.btn{
+    text-decoration: none;
+}
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
