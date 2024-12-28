@@ -214,6 +214,14 @@ body.dark-mode .contact-info p {
     color: var(--color-white);
 }
 
+/* Input Section */
+body.dark-mode .input-field{
+    color: var(--color-white);
+}
+body.dark-mode .text-field{
+    color: var(--color-white);
+}
+
 /* This is done for send button */
 body.dark-mode #send{
     background-color: var(--second-color);
