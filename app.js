@@ -127,3 +127,15 @@ let contactForm = document.getElementById("contactForm");
 hireMeBtn.addEventListener("click", () => {
     contactForm.scrollIntoView({ behavior : "smooth"});
 });
+
+
+// making darkmode and lightmode feature
+let darkMode = document.getElementById("icon");
+darkMode.addEventListener("click",function(){
+  document.body.classList.toggle("dark-mode");
+  if(document.body.classList.contains("dark-mode")){
+    icon.src = "assests/sun.png";
+  }else{
+    icon.src = "assests/moon.png";
+  }
+})

@@ -74,6 +74,154 @@ i{
 body{
     background: var(--body-color);
 }
+
+/* The code includes all the color feature for the dark mode */
+/* ----- Dark Mode Variables ----- */
+body.dark-mode {
+    --body-color: rgb(20, 20, 20); /* Dark background */
+    --color-white: rgb(245, 245, 245); /* Slightly off-white for less strain */
+
+    --text-color-second: rgb(200, 200, 200); /* Light gray for text */
+    --text-color-third: rgb(80, 205, 217); /* Soft cyan for highlights */
+
+    --first-color: rgb(108, 92, 231); /* Violet for primary buttons */
+    --first-color-hover: rgb(88, 73, 186); /* Slightly darker violet on hover */
+
+    --second-color: rgb(50, 150, 200); /* Deep cyan */
+    --third-color: rgb(255, 193, 7); /* Amber for accents */
+    --first-shadow-color: rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+}
+
+/* ----- Adjustments for Components in Dark Mode ----- */
+
+/* Global Elements */
+body.dark-mode body {
+    background: var(--body-color);
+    color: var(--text-color-second); /* Default text color */
+}
+
+body.dark-mode .btn {
+    background: var(--first-color);
+    color: var(--color-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+body.dark-mode .btn:hover {
+    background: var(--first-color-hover);
+}
+
+/* Navigation Bar */
+body.dark-mode nav {
+    background: var(--body-color);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+body.dark-mode .nav-name {
+    color: var(--text-color-third);
+}
+body.dark-mode .nav-link {
+    color: var(--text-color-second);
+}
+body.dark-mode .active-link {
+    color: var(--first-color);
+}
+
+/* Featured Section */
+body.dark-mode .featured-name {
+    color: var(--color-white);
+}
+body.dark-mode .featured-text-info {
+    color: rgb(180, 180, 180); /* Softer gray for descriptive text */
+}
+body.dark-mode .social_icons .icon {
+    background: var(--body-color);
+    border: 1px solid var(--text-color-third);
+    color: var(--text-color-third);
+}
+body.dark-mode .social_icons .icon:hover {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+/* About Section */
+body.dark-mode .about-info {
+    background: rgb(30, 30, 30); /* Darker card background */
+    color: var(--text-color-second);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+}
+body.dark-mode .about-info p {
+    color: rgb(180, 180, 180);
+}
+
+/* Skills Section */
+body.dark-mode .skills-list span {
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+/* Projects Section */
+body.dark-mode .project-box {
+    background: rgb(30, 30, 30);
+    color: var(--text-color-second);
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.6);
+}
+body.dark-mode .project-box:hover::after {
+    background: var(--first-color);
+}
+body.dark-mode .project-box:hover h3,
+body.dark-mode .project-box:hover i,
+body.dark-mode .project-box:hover label {
+    color: var(--color-white);
+}
+
+/* Contact Section */
+body.dark-mode .contact-info {
+    background: var(--body-color);
+    color: var(--text-color-second);
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .contact-info:hover::after {
+    background: var(--first-color);
+}
+body.dark-mode .contact-info h2,
+body.dark-mode .contact-info p {
+    color: var(--color-white);
+}
+
+/* Footer */
+body.dark-mode footer {
+    background: rgb(25, 25, 25);
+    color: var(--text-color-second);
+}
+body.dark-mode .footer_menu_list a {
+    color: var(--text-color-second);
+}
+body.dark-mode .footer_menu_list a:hover {
+    color: var(--text-color-third);
+}
+body.dark-mode .footer-social-icons .icon {
+    background: rgb(25, 25, 25);
+    border: 1px solid var(--text-color-third);
+    color: var(--text-color-third);
+}
+body.dark-mode .footer-social-icons .icon:hover {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+/* Scrollbar */
+body.dark-mode ::-webkit-scrollbar-track {
+    background: rgb(40, 40, 40);
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color-hover);
+}
+
+/* so these is the last part for color of dark mode */
+
+
+
 .container{
     width: 100%;
     position: relative;
@@ -152,6 +300,17 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
+
+/* Dark-Mode Feature */
+#icon{
+    width: 25px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    top: 24px;
+    left: 80px;
+}
+
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
