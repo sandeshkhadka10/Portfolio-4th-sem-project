@@ -99,6 +99,13 @@ body.dark-mode body {
     background: var(--body-color);
     color: var(--text-color-second); /* Default text color */
 }
+body.dark-mode #hireMeBtn{
+    background-color: var(--first-color);
+    color: var(--color-white);
+}
+body.dark-mode #hireMeBtn:hover{
+    background-color: var(--first-color-hover);
+}
 body.dark-mode .btn {
     background: var(--color-white);
     color: var(--body-color);
@@ -132,13 +139,11 @@ body.dark-mode .featured-text-info {
     color: rgb(180, 180, 180); /* Softer gray for descriptive text */
 }
 body.dark-mode .social_icons .icon {
-    background: var(--body-color);
-    border: 1px solid var(--text-color-third);
-    color: var(--text-color-third);
+    background: var(--color-white);
+    color: var(--first-color);
 }
 body.dark-mode .social_icons .icon:hover {
-    background: var(--first-color);
-    color: var(--color-white);
+    color: var(--body-color);
 }
 
 /* About Section */
