@@ -138,4 +138,4 @@ darkMode.addEventListener("click",function(){
   }else{
     icon.src = "assests/moon.png";
   }
-})
+});
