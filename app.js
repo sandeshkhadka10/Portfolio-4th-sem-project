@@ -117,10 +117,6 @@ sections.forEach(current =>{
 window.addEventListener('scroll', scrollActive)
 
 // Triggering Contact form when clicking Hire Me button
-// document.querySelector("hireMeBtn").addEventListener("click",()=>{
-//   document.querySelector("contactForm").scrollIntoView({behavior : "smooth"});
-// });
-
 let hireMeBtn = document.getElementById("hireMeBtn");
 let contactForm = document.getElementById("contactForm");
 
