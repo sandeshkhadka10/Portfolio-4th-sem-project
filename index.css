@@ -336,7 +336,7 @@ h3{
     font-size: 15px;
     color: #777;
 }
-.about-btn button{
+.about-btn a{
     position: absolute;
     right: 35%;
     bottom: 20px;
