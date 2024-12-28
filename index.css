@@ -148,9 +148,20 @@ body.dark-mode .social_icons .icon:hover {
 
 /* About Section */
 body.dark-mode .about-info {
-    background: rgb(30, 30, 30); /* Darker card background */
-    color: var(--text-color-second);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    background: var(--color-white);
+}
+body.dark-mode .about-info h3{
+    color: var(--body-color);
+}
+body.dark-mode .about-info #p{
+    color: var(--body-color);
+}
+body.dark-mode #introCV{
+    background-color: var(--first-color);
+    color: var(--color-white);
+}
+body.dark-mode #introCV:hover{
+    background-color: var(--second-color);
 }
 body.dark-mode .about-info p {
     color: rgb(180, 180, 180);
@@ -158,18 +169,22 @@ body.dark-mode .about-info p {
 
 /* Skills Section */
 body.dark-mode .skills-list span {
-    background: var(--second-color);
+    background: var(--first-color);
     color: var(--color-white);
 }
 
 /* Projects Section */
 body.dark-mode .project-box {
-    background: rgb(30, 30, 30);
+    background: var(--color-white);
     color: var(--text-color-second);
     box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.6);
 }
+body.dark-mode .project-box h3{
+    color: var(--body-color);
+}
+
 body.dark-mode .project-box:hover::after {
-    background: var(--first-color);
+    background: var(--second-color);
 }
 body.dark-mode .project-box:hover h3,
 body.dark-mode .project-box:hover i,
@@ -179,12 +194,12 @@ body.dark-mode .project-box:hover label {
 
 /* Contact Section */
 body.dark-mode .contact-info {
-    background: var(--body-color);
+    background: var(--second-color);
     color: var(--text-color-second);
     box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.5);
 }
 body.dark-mode .contact-info:hover::after {
-    background: var(--first-color);
+    background: var(--color-white);
 }
 body.dark-mode .contact-info h2,
 body.dark-mode .contact-info p {
