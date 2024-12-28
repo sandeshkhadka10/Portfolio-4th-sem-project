@@ -125,10 +125,15 @@ body.dark-mode .nav-name {
     color: var(--text-color-third);
 }
 body.dark-mode .nav-link {
-    color: var(--text-color-second);
+    color: var(--color-white);
 }
 body.dark-mode .active-link {
     color: var(--first-color);
+}
+
+/* SideBar */
+body.dark-mode .nav-menu-btn{
+    color: var(--color-white);
 }
 
 /* Featured Section */
