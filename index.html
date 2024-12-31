@@ -195,18 +195,20 @@
                     </div>
                  </div>
                  <div class="col">
-                    <div class="form-control" id="contactForm">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Name">
-                            <input type="text" class="input-field" placeholder="Email">
+                    <form action="/register" method="post">
+                        <div class="form-control" id="contactForm">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name" name="name" required>
+                                <input type="text" class="input-field" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea class="text-field" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn" id="send" type="submit">Send <i class="uil uil-message"></i></button>
+                            </div>
                         </div>
-                        <div class="text-area">
-                            <textarea placeholder="Message" class="text-field"></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn" id="send">Send <i class="uil uil-message"></i></button>
-                        </div>
-                    </div>
+                    </form>
                  </div>
               </div>
            </section>
