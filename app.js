@@ -135,3 +135,10 @@ darkMode.addEventListener("click",function(){
     icon.src = "assests/moon.png";
   }
 });
+
+// connecting frontend with backend
+let form = document.getElementById("contact-form");
+form.addEventListener("submit",function(event){
+  event.preventDefault();
+
+});

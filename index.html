@@ -212,37 +212,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Scripts -->
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-        
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-        
-            // Prepare the data to be sent to the backend
-            const formData = new FormData();
-            formData.append("name", name);
-            formData.append("email", email);
-            formData.append("message", message);
-        
-            // Send the POST request using Axios
-            axios.post('http://localhost:8080/register', formData) // Make sure to use the correct backend URL
-                .then(response => {
-                    alert('Message sent successfully!');
-                    document.getElementById('contactForm').reset(); // Reset the form
-                })
-                .catch(error => {
-                    console.error('Error:', error.response ? error.response.data : error.message);
-                    alert('There was an error sending the message.');
-                });
-        });
-
-        </script>
-        
-        
         </main>
 
         <!-- --------------- FOOTER --------------- -->
@@ -285,6 +254,7 @@
     <!-- linked with scroll reveal for better scrolling presentation -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- used axios for backend API calls -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- linked with js -->
