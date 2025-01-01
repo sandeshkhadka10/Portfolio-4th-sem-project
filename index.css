@@ -841,6 +841,7 @@ footer{
         display: flex;
         justify-content: center;
         width: 100%;
+        gap: 0px;
     }
     .about-info, .contact-info{
         width: 100%;
