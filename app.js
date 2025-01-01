@@ -137,8 +137,26 @@ darkMode.addEventListener("click",function(){
 });
 
 // connecting frontend with backend
-let form = document.getElementById("contact-form");
-form.addEventListener("submit",function(event){
+let form = document.getElementById("contactForm");
+form.addEventListener("submit",async function(event){
   event.preventDefault();
 
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // preparing the data to be sent to the backend
+  const formData = new FormData();
+  formData.append("name",name);
+  formData.append("email",email);
+  formData.append("message",message);
+
+  try{
+    const response = await axios.post("http://localhost:8080/register",formData);
+    alert("Message sent successfully");
+    document.getElementById("contactForm").reset();
+  }catch(error){
+    console.log(error);
+    alert("There was an error sending the message");
+  }
 });
