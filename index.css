@@ -169,6 +169,13 @@ body.dark-mode .about-info h3{
 body.dark-mode .about-info #p{
     color: var(--body-color);
 }
+body.dark-mode .about-btn .btn{
+    background-color: var(--first-color);
+    color: var(--color-white);
+}
+body.dark-mode .about-btn .btn:hover{
+    background-color: var(--second-color);
+}
 body.dark-mode #introCV{
     background-color: var(--first-color);
     color: var(--color-white);
